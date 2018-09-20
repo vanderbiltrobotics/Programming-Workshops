@@ -117,7 +117,7 @@ We apply a PWM signal the the PWM pin on the motor driver to vary the speed of t
 
 #### Arduino code
 
-[This code](../code/9-8-motors-range-sensors/ControlMotors/ControlMotors.ino), when uploaded to the robot, will cause the motors to switch between low, medium, and high speed, remaining at each speed for 2 seconds.
+[This code](https://github.com/vanderbiltrobotics/Programming-Workshops/tree/master/code/9-8-motors-range-sensors/ControlMotors), when uploaded to the robot, will cause the motors to switch between low, medium, and high speed, remaining at each speed for 2 seconds.
 
 ```
 int leftMotor1 = 1;    // Left Motor
@@ -180,7 +180,7 @@ The problem is that the Arduino's processor is a digital device and thus can onl
 
 #### Arduino code
 
-[Here](../code/9-8-motors-range-sensors/ReadRangeSensor/ReadRangeSensor.ino) is code that reads values from the sensor
+[Here](https://github.com/vanderbiltrobotics/Programming-Workshops/tree/master/code/9-8-motors-range-sensors/ReadRangeSensor) is code that reads values from the sensor
 
 ```
 // sensor
@@ -217,7 +217,7 @@ we can now open the serial monitor in the Arduino IDE (magnifying glass icon in 
 
 The goal for today is to write a program that makes the robot drive forward until it detects an object in front of it. When an object is detected, the robot should stop moving. If there is no longer an object detected, the robot should resume driving. All the information needed to get this program working should be available on this page. 
 
-[A working arduino script is available here](../code/9-8-motors-range-sensors/ApproachWall/ApproachWall.ino) - try to get it working on your own before you look at this
+[A working arduino script is available here](https://github.com/vanderbiltrobotics/Programming-Workshops/tree/master/code/9-8-motors-range-sensors/ApproachWall) - try to get it working on your own before you look at this
 
 ### Helpful resources
 

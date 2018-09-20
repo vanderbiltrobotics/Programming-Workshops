@@ -10,6 +10,9 @@
 // defines
 #define STEPS 200
 
+// Sensor pin
+int sensorPin = A0;
+
 // Stepper motor pin assignments
 int INA2 = 7;
 int INA1 = 8;

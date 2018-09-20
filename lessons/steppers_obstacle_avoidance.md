@@ -51,7 +51,7 @@ An important thing to realize is that the range sensor covers a pretty small ang
 
 #### Responding to the obstacle (helper functions)
 
-It's useful to be able to momentarily pause the loop, do some other task, then resume the loop once the task is finished. You can use a helper function for this. Define a function outside the loop, at the bottom of the page. If you then call this function from within the loop, you'll jump to that function, execute it, and return to the loop. [This example]() shows how you can do that to periodically switch the direction of a motor.
+It's useful to be able to momentarily pause the loop, do some other task, then resume the loop once the task is finished. You can use a helper function for this. Define a function outside the loop, at the bottom of the page. If you then call this function from within the loop, you'll jump to that function, execute it, and return to the loop. [This example]() shows how you can do that to periodically switch a motor on and off.
 
 #### Turning
 

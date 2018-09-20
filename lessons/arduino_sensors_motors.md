@@ -52,7 +52,7 @@ I'll explain each of these in more detail before we use them so don't worry if y
 
 #### The Adafruit Metro Mini
 
-This robot uses an Adafruit Metro Mini to read it's sensors and control its motors. The Metro is bascially just an Arduino Uno packed on to a smaller board. It has all the same I/O pins, the same memory and clock speed (in fact it uses the exact same processor chip), and can be programmed via the Arduino IDE as though it were an Uno. 
+This robot uses an Adafruit Metro Mini to read its sensors and control its motors. The Metro is bascially just an Arduino Uno packed on to a smaller board. It has all the same I/O pins, the same memory and clock speed (in fact it uses the exact same processor chip), and can be programmed via the Arduino IDE as though it were an Uno. 
 
 The Uno is nice in that it has female connectors on every pin and it's nice and big and easier to see what's going on. When you're prototyping a project, this is great because it's easy to use jumper wires to test out different circuits and debug your program. When you know how you want everything wired and you're ready to put your project into an actual robot, it can sometimes be nice to have a smaller board such as the Metro mini. This board is smaller and cheaper (15$ vs. 35$ for the Uno) but you have to solder all your connections so it's not ideal for quickly testing different circuit designs.
 

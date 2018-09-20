@@ -1,5 +1,4 @@
-Meeting Schedule
-================
+# Meeting Schedule
 
 Everything on here is tentative but the next few weeks should generally be accurate. This is a fairly optimistic timeline and I expect things to get pushed back a little, but I think we will be able to keep up  pretty well. 
 

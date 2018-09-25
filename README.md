@@ -10,7 +10,7 @@ Before each meeting, I'll add a link in the calendar to a written walkthough for
 |:-------:|:-------:|:--------:|:--------:|
 |9/2      | -                                                                            | -                                                      | [Arduino, reading sensors, controlling motors](lessons/arduino_sensors_motors.md)|
 |9/9      | *mechanical design brainstorming*                                           | *mechanical design brainstorming*                     | *mechanical design brainstorming*                                               | 
-|9/16     |[stepper motors, obstacle avoidance](lessons/steppers_obstacle_avoidance.md) | finish obstacle avoidance, intro to PID                | Git & GitHub, continue PID                                                       | 
+|9/16     |[stepper motors, obstacle avoidance](lessons/steppers_obstacle_avoidance.md) | finish obstacle avoidance                | [Git & GitHub](lessons/git_github.md)                                                       | 
 |9/23     | Raspberry pi + Arduino                                                       | Localization intro                                     | Implement a localization algorithm                                               | 
 |9/30     | ROS basics                                                                   | ROS for the mining robot                               | PID speed control with ROS & last year's robot                                   | 
 |10/7     | Image processing basics                                                      | Marker detection theory                                | Implement marker detection                                                       | 

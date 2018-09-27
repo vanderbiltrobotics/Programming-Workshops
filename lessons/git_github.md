@@ -43,7 +43,7 @@ A commit is just a single version of your project that has been saved by git. Ev
 3. Continue working on those files until you've reached a logical checkpoint
 4. Commit the changes to those files (`git commit -m "Brief commit message explaining what you've changed"`)
 
-Once you've added a file to the staging area, it'll stay there until you explicitly remove it from the staging area (`git reset HEAD [FILENAME]`) so you don't need to re-add the file before every subsequent commit. 
+Once you've added a file to the staging area, it'll stay there until you explicitly remove it from the staging area (`git reset HEAD [FILENAME]`) or until you make a commit. After you make a commit, you'll have to re-stage the file before the next commit. This can be a little tedious and many programs that integrate git (such as CLion or GitHub Desktop) will automatically re-stage modified files.
 
 Here are a few useful git commands related to commits
 - `git status` - this will show you what files in the working directory have been modified since the last commit and whether or not those files are in the staging area. It's useful to check this before committing so you can see exactly what changes will be saved in the commit.
@@ -78,9 +78,9 @@ The command `git pull origin` updates the local repository with any new commits 
 
 It's easy to think of situations where problems could arise as different people push / pull. What if 'person A' pushes makes a change to a file and commits it, and meanwhile, 'person B' has made a different change to that same file. When person B goes tries to push his commit, there will be a conflict. 
 
-There are two steps that must be taken to resolve this. First, git requires you to have pulled the most recent version of a remote before you can push to it. In the situation above, person B's local repository is one commit behind the remote, so they will have to pull before they can push. If the changes that person A made concerned different files than person B's changes or even unrelated parts of the same files, git will simple update the relevant files in person B's repository. But if person A and person B both made changes to the same parts of a file, git will require person B to 'merge' the changes in a new commit before they can push to the remote. 
+There are two steps that must be taken to resolve this. First, git requires you to have pulled the most recent version of a remote before you can push to it. In the situation above, person B's local repository is one commit behind the remote, so they will have to pull before they can push. If the changes that person A made concerned different files than person B's changes or even unrelated parts of the same files, git will simply update the relevant files in person B's repository. But if person A and person B both made changes to the same parts of a file, git will require person B to 'merge' the changes in a new commit before they can push to the remote. 
 
-When a pull conflict occurs, git will add both people's changes to the files in person B's workspace as well as some markings (>>>>>>>>>>>>, <<<<<<<<<<<<<) to indicate where in the files these conflicts occurred. It's person B's job to go through the conflicting areas and resolve the differences. Once they have done so, they make a new commit (which should explain that it is a merge in the commit description) and push that commit to the remote. The conflict is now resolved. 
+When a pull conflict occurs, git will add both people's changes to the files in person B's workspace as well as some markings (>>>>>>>>>>>>, <<<<<<<<<<<<<) to indicate where in the files these conflicts occurred. It's person B's job to go through the conflicting areas and resolve the differences. Once they have done so, they make a new commit (which should explain that it is a merge in the commit message) and push that commit to the remote. The conflict is now resolved. 
 
 #### Branching
 

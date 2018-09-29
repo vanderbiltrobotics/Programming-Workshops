@@ -12,7 +12,7 @@ Before each of the workshop-style meetings, I'll add a link in the calendar to a
 |9/9      | *mechanical design brainstorming*          | *mechanical design brainstorming*        | *mechanical design brainstorming* | 
 |9/16     |[stepper motors, obstacle avoidance](lessons/steppers_obstacle_avoidance.md) | finish obstacle avoidance     | *no meeting*  | 
 |9/23     | [Git & GitHub](lessons/git_github.md)   | [Git & GitHub](lessons/git_github.md), brainstorming    | First look at sub-teams, start research | 
-|9/30     | ROS intro         | ROS practice     | General work session, pick sub-teams practice        | 
+|9/30     | ROS intro         | ROS practice     | General work session, pick sub-teams      | 
 |10/7     | Communication strategies     | PID control overview     | General work session | 
 |10/14    | PDR check-in, Search / planning overview       | *Fall Break*      | *Fall Break*   |
 |10/21    | Localization overview | Image processing overview | General work session |

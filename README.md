@@ -1,23 +1,22 @@
 # Meeting Schedule
 
-Everything on here is tentative but the next few weeks should generally be accurate. This is a fairly optimistic timeline and I expect things to get pushed back a little, but I think we will be able to keep up  pretty well. 
-
 The overall goal for this semester is to get everyone the skills necessary to contribute to one of the major programming tasks that will need to be completed for the competition robot. That way, once the robot is ready to be programmed, none of those tasks will seem too daunting as we'll have solved similar problems already.
 
-Before each meeting, I'll add a link in the calendar to a written walkthough for the lesson. 
+Each week, 1-2 meetings will be devoted to learning about some robotics programming topic that may be applicable to the competition robot. The other 1-2 meetings will be spent working in sub-teams on a specific problem related to the robot. 
+
+Before each of the workshop-style meetings, I'll add a link in the calendar to a written walkthough for the lesson
 
 | Week of | Tuesday | Thursday | Saturday | 
 |:-------:|:-------:|:--------:|:--------:|
-|9/2      | -                                                                            | -                                                      | [Arduino, reading sensors, controlling motors](lessons/arduino_sensors_motors.md)|
-|9/9      | *mechanical design brainstorming*                                           | *mechanical design brainstorming*                     | *mechanical design brainstorming*                                               | 
-|9/16     |[stepper motors, obstacle avoidance](lessons/steppers_obstacle_avoidance.md) | finish obstacle avoidance                | [Git & GitHub](lessons/git_github.md)                                                       | 
-|9/23     | Raspberry pi + Arduino                                                       | Localization intro                                     | Implement a localization algorithm                                               | 
-|9/30     | ROS basics                                                                   | ROS for the mining robot                               | PID speed control with ROS & last year's robot                                   | 
-|10/7     | Image processing basics                                                      | Marker detection theory                                | Implement marker detection                                                       | 
-|10/14    | Search strategies                                                            | *Fall Break*                                           | *Fall Break*                                                                     |
-|10/21    | Path planning theory                                                         | combine particle filter & path planning on small robot | finish Tuesday's project                                                         |
-|10/28    | SLAM                                                                         | SLAM                                                   | SLAM                                                                             | 
-|11/4     | *Break into groups to work on subproblems*                                   |                                                        |                                                                                  |
+|9/2      | -                          | -              | [Arduino, reading sensors, controlling motors](lessons/arduino_sensors_motors.md)|
+|9/9      | *mechanical design brainstorming*          | *mechanical design brainstorming*        | *mechanical design brainstorming* | 
+|9/16     |[stepper motors, obstacle avoidance](lessons/steppers_obstacle_avoidance.md) | finish obstacle avoidance     | *no meeting*  | 
+|9/23     | [Git & GitHub](lessons/git_github.md)   | [Git & GitHub](lessons/git_github.md), brainstorming    | First look at sub-teams, start research | 
+|9/30     | ROS intro         | ROS practice     | General work session, pick sub-teams practice        | 
+|10/7     | Communication strategies     | PID control overview     | General work session | 
+|10/14    | PDR check-in, Search / planning overview       | *Fall Break*      | *Fall Break*   |
+|10/21    | Localization overview | Image processing overview | General work session |
+|10/28    | More image processing |   Working with last year's robot  | Working with last year's robot / general work session | 
 
 
 

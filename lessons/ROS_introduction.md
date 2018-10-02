@@ -24,7 +24,7 @@ ROS solves these problems by allowing us to separate the complex problem into di
 
 ### Core concepts of ROS
 
-#### Nodes, Topics
+#### Nodes and Topics
 
 A **node** is simply an executable that uses ROS to communicate with other nodes
 

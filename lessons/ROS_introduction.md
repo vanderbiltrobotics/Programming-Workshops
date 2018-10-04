@@ -9,7 +9,7 @@ From the ROS website...
 ROS provides a set of tools that make it easy to break complex robotics problems into sub-problems, develop solutions for each sub-problem, and run each solution simultaneously to achieve the overall task. This probably sounds pretty vague at the moment, but once we get into the core concepts of ROS and work through some examples, it will make a lot more sense what this means and why it's very useful. 
 
 
-### Why is ROS?
+### Why ROS?
 
 Consider the robotic mining system we're trying to design. Clearly there are lots of sub-problems that each must be solved for the robot to work. We need to control the drive-train, control the dig system, detect obstacles, figure out where the robot is relative to the map of the world, and more. While there is some information that needs to be passed between each these subsystems (for instance a route planner will need to know the locations of obstacles in order to avoid them), the actual operations on that iniformation are independent. Not considering what inputs are required, the code that identifies obstacles from camera frames is totally independent from the code that computes the best path between two points. 
 

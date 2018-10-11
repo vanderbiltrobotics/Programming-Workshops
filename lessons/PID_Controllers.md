@@ -2,7 +2,7 @@
 
 ### Control Systems
 
-Consider the following scenario: Theres a point located along a line. You have a knob that you can turn which controls the velocity of the point along that line. The farther to the right you turn the knob, the faster to the right the point moves, and the farther left you turn the knob, the farther left the point moves. Now suppose you are given a target position and your goal is to move the point to the target position, preferrably as quickly as possible. Chances are, this would be pretty easy to do. While the point is far away from the target, you move it quickly towards the target. As the point nears the target, you gradually slow it down until finally, you bring it to a stop when its position mathces the target. 
+Consider the following scenario: There's a point located along a line. You have a knob that you can turn which controls the velocity of the point along that line. The farther to the right you turn the knob, the faster to the right the point moves, and the farther left you turn the knob, the farther left the point moves. Now suppose you are given a target position and your goal is to move the point to the target position, preferrably as quickly as possible. Chances are, this would be pretty easy to do. While the point is far away from the target, you move it quickly towards the target. As the point nears the target, you gradually slow it down until finally, you bring it to a stop when its position mathces the target. 
 
 This scenario is an example of a control system. This system has the following features:
 - An *output*: this is the value we care about. In this case it's the position of the point along the line
@@ -17,29 +17,29 @@ In this example, the controller was a person. Generally, however, our goal is fo
 
 While the above example may seem rather useless, this type of system is very common. I'll list a few examples here but if you keep an eye out, you'll start to see that these systems actually occur all over the place.
 
-- A house heating system
-output = temperature of the house
-target = temperature setting on the thermostat
-controller = the thermostat
-manipulated variable = on / off status of the heating units in the house
-plant = heating unit
-error = difference between the temperature setting and the actual temperature (read from a thermometer somewhere)
+*A house heating system*
+- output = temperature of the house
+- target = temperature setting on the thermostat
+- controller = the thermostat
+- manipulated variable = on / off status of the heating units in the house
+- plant = heating unit
+- error = difference between the temperature setting and the actual temperature (read from a thermometer somewhere)
 
-- An Arduino is connected to a DC motor. The Arduino has a target speed that it's trying to spin the motor at. It can control the motor by setting the voltage applied to the motor. An encoder on the motor sends information about the speed of the motor back to the Arduino. 
-output = motor speed
-target = desired motor speed
-controller = the Arduino
-manipulated variable = voltage applied to motor
-plant = motor
-error = target speed minus actual speed (read from encoder)
+*An Arduino is connected to a DC motor. The Arduino has a target speed that it's trying to spin the motor at. It can control the motor by setting the voltage applied to the motor. An encoder on the motor sends information about the speed of the motor back to the Arduino.*
+- output = motor speed
+- target = desired motor speed
+- controller = the Arduino
+- manipulated variable = voltage applied to motor
+- plant = motor
+- error = target speed minus actual speed (read from encoder)
 
-- You are driving down the highway in a car, trying to stay in the center of your lane. 
-output = the car's actual position in the lane
-target = the center of the lane
-controller = you
-manipulated variable = the position of the steering wheel
-plant = the car
-error = distance between the center of the lane and the car's actual position
+*You are driving down the highway in a car, trying to stay in the center of your lane.*
+- output = the car's actual position in the lane
+- target = the center of the lane
+- controller = you
+- manipulated variable = the position of the steering wheel
+- plant = the car
+- error = distance between the center of the lane and the car's actual position
 
 ### Designing a controller
 
@@ -55,7 +55,7 @@ output_sig = P_gain * current_error
 apply(output_sig)
 ```
 
-Notice that by changing the value of `P_gain`, we can change the speed at which we approach the target. A high P_gain will cause us to approach faster than if we use a lower P_gain. In real applications, the controller can't act infinitely fast, so if the P_gain is set to high, the output may overshoot the target value or even oscillate out of control.
+Notice that by changing the value of `P_gain`, we can change the speed at which we approach the target. A high P_gain will cause us to approach faster than if we use a lower P_gain. In real applications, the controller can't act infinitely fast, so if the P_gain is set too high, the output may overshoot the target value or even oscillate out of control.
 
 We can design a working controller for some systems using only proportional control. For instance, in the first example, proportional control is all that we need to move the point to the target. 
 
